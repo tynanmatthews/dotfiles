@@ -142,5 +142,5 @@ unset __conda_setup
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # set default config location
-# export XDG_CONFIG_HOME = "~/.config"
+export XDG_CONFIG_HOME="~/.config/"
 alias config='/usr/bin/git --git-dir=/Users/tynanmatthews/.cfg/ --work-tree=/Users/tynanmatthews'
