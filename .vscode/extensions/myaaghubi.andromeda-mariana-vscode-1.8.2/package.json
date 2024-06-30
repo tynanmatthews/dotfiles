@@ -1,0 +1,98 @@
+{
+	"name": "andromeda-mariana-vscode",
+	"displayName": "Andromeda Mariana",
+	"description": "Andromeda theme with the Mariana color syntax highlight",
+	"version": "1.8.2",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#23262E",
+		"theme": "dark"
+	},
+	"license": "MIT",
+	"publisher": "myaaghubi",
+	"author": {
+		"name": "Mohammad Yaaghubi",
+		"url": "https://github.com/myaaghubi"
+	},
+	"repository": {
+		"url": "https://github.com/myaaghubi/Andromeda-Mariana-VSCode"
+	},
+	"bugs": {
+		"url": "https://github.com/myaaghubi/Andromeda-Mariana-VSCode/issues"
+	},
+	"engines": {
+		"vscode": "^1.14.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"Andromeda",
+		"Mariana",
+		"SublimeText",
+		"Theme"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Andromeda Mariana",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Andromeda-mariana-color-theme.json"
+			},
+			{
+				"label": "Andromeda Mariana - Bordered",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Andromeda-mariana-color-theme-bordered.json"
+			},
+			{
+				"label": "Andromeda Mariana - Italic Bordered",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Andromeda-mariana-italic-color-theme-bordered.json"
+			},
+			{
+				"label": "Andromeda Mariana - Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Andromeda-mariana-italic-color-theme.json"
+			},
+			{
+				"label": "Andromeda Mariana - Colorizer",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Andromeda-mariana-colorizer.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.14.0",
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "16.x",
+		"@typescript-eslint/eslint-plugin": "^5.53.0",
+		"@typescript-eslint/parser": "^5.53.0",
+		"eslint": "^8.34.0",
+		"glob": "^8.1.0",
+		"mocha": "^10.2.0",
+		"typescript": "^4.9.5",
+		"@vscode/test-electron": "^2.2.3"
+	},
+	"__metadata": {
+		"id": "90e1c610-db17-4dd0-a7ac-1d484184c488",
+		"publisherId": "8bfdd8c0-618f-4f61-a03d-281151afd64c",
+		"publisherDisplayName": "Mohammad.Y",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1711012059949
+	}
+}
