@@ -1,0 +1,21 @@
+configuration {
+    modi: "drun";
+    font: "Victor Mono";
+
+    timeout {
+        // the delay after inactivity
+        delay: 0;
+        //the action to execute
+        action: "kb-cancel";
+      }
+
+      filebrowser{
+          sorting-method: "name";
+          directories-first: true;
+        }
+  }
+
+
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+
+@theme "/home/domini/.config/rofi/themes/rounded-red-dark.rasi"
